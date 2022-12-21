@@ -73,8 +73,8 @@ def call_html(nombre):
 
 #Calculadora en html:
 
-@app.route("/operacion/<float:n1>/<float:n2>/<ope>")
-def calculadora(n1, n2, ope):
+@app.route("/operacionrender/<float:n1>/<float:n2>/<ope>")
+def calculadorarender(n1, n2, ope):
 
     if ope == "suma" or ope == "+":
         return render_template ("hola.html", resultado = f"La suma de {n1} y {n2} es {n1 + n2}")
